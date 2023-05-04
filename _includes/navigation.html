@@ -1,0 +1,19 @@
+<nav>
+    <div class="nav-center">
+        <div class="nav-header">
+            <a href="{{base_url}}/" class="emoji-logo">&#128125;</a>
+
+            <!-- <img class="logo" src="{{site.data.info.logo}}"> -->
+        <button class="nav-toggle"><i class="fas fa-bars"></i></button>
+    </div>
+        <ul class="links">
+            {% for item in site.data.navigation %}
+            <li>
+                <a href="{{base_url}}{{ item.link }}" {% if page.url==item.link %}class="current" {% endif %}>
+                    {{ item.name | upcase }}
+                </a> &nbsp;
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+</nav>
