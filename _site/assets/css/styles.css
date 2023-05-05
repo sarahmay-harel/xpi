@@ -21,6 +21,17 @@ main {
 nav {
   z-index: 999;
 }
+nav a {
+  color: #2c568f;
+}
+nav a:hover {
+  text-decoration: #2c568f solid underline 2px;
+  text-underline-offset: 5px;
+  color: #2c568f;
+}
+nav h1 {
+  font-size: 2rem;
+}
 
 .content {
   flex: 1;
@@ -111,6 +122,7 @@ h1 {
 
 h2 {
   font-size: 3rem;
+  color: #2c568f;
 }
 
 .title h1 {
@@ -201,6 +213,11 @@ a:hover {
     color: rgb(115, 83, 217);
   }
 }
+.service {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
 .service-image {
   max-width: 50%;
   border-radius: 50%;
