@@ -1,31 +1,17 @@
 <footer>
-    <div class="row">
+    <div class="row" style="justify-content: space-around">
 
-        <div class="col-md-4 col-sm-12 text-center">
+        <div class="col-md-4 col-sm-12 text-center d-flex" style="justify-content: flex-start">
+            <p>&copy; <script>document.write(new Date().getFullYear())</script>, {{site.data.info.name}}</p>
+
+        </div>
+
+        <div class="col-md-4 col-sm-12 text-center  d-flex" style="justify-content: flex-end">
             {% for item in site.data.navigation %}
             <a href="{{base_url}}{{ item.link }}" {% if page.url==item.link %}class="current" {% endif %}>
                 {{ item.name | upcase }}
             </a> &nbsp;
             {% endfor %}
-        </div>
-
-
-        <div class="col-md-4 col-sm-12 text-center">
-            <div class="pt-3 d-md-none"></div>
-            <p>
-                <a href="https://github.com/{{site.data.info.github}}" target="_blank"><img
-                        src="https://i.imgur.com/A3Hhmgf.png" class="tiny"></a>
-                <a href="https://www.linkedin.com/in/{{site.data.info.linkedin}}/" target="_blank"><img
-                        src="https://i.imgur.com/FqqjyxG.png" class="tiny"></a>
-                <a href="https://twitter.com/{{site.data.info.twitter}}" target="_blank"><img src="https://i.imgur.com/mnPU5kM.png"
-                        class="tiny"></a>
-                <a href="mailto:{{site.data.info.email}}"><img src="https://i.imgur.com/eAM8FWE.png"
-                        class="tiny"></a>
-            </p>
-        </div>
-
-        <div class="col-md-4 col-sm-12 text-center">
-            <p>&copy; <script>document.write(new Date().getFullYear())</script>, {{site.data.info.name}}</p>
         </div>
     </div>
 </footer>

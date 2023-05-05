@@ -1,11 +1,18 @@
 <nav>
     <div class="nav-center">
         <div class="nav-header">
-            <a href="{{base_url}}/" class="emoji-logo">&#128125;</a>
+
+            <a href="{{base_url}}/">
+                <div class="d-flex">
+                    <!-- <img class="logo" src="{{site.data.info.logo}}" alt="XPI Logo"> -->
+                    <h1 class="title">{{site.data.info.name}}</h1>
+                </div>
+            </a>
+
 
             <!-- <img class="logo" src="{{site.data.info.logo}}"> -->
-        <button class="nav-toggle"><i class="fas fa-bars"></i></button>
-    </div>
+            <button class="nav-toggle"><i class="fas fa-bars"></i></button>
+        </div>
         <ul class="links">
             {% for item in site.data.navigation %}
             <li>
