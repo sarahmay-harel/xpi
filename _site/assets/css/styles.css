@@ -14,6 +14,10 @@ body {
   font-weight: 700;
 }
 
+a {
+  text-decoration: none;
+}
+
 p {
   font-weight: 400;
 }
@@ -255,6 +259,11 @@ footer a:hover {
 
 .tiny {
   max-width: 10%;
+}
+
+.testimonials-image {
+  border-radius: 50%;
+  max-width: 40%;
 }
 
 /*# sourceMappingURL=styles.css.map */
